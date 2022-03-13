@@ -37,6 +37,7 @@ p {
 .page {
     width: 100%;
     height: 100vh;
+    position: relative;
 
     background: #000 url("../img/bg.jpg") center no-repeat;
     background-size: cover;
@@ -166,5 +167,67 @@ p {
 }
 
 
+/* Author
+=================*/
+.author {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
 
+}
 
+/* Footer
+=============== */
+
+.footer {
+
+    width: 100%;
+    position: absolute;
+    bottom: 45px;
+    left: 0px;
+}
+
+/* Contacts
+=============== */
+.contacts {
+    display: flex;
+    align-items: center;
+
+}
+
+.contacts-link {
+    margin-right: 2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+
+    text-decoration: none;
+
+}
+
+.contacts-link:last-child {
+    margin-right: 0;
+    position: relative;
+}
+
+.contacts-link:last-child::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+pointer-events: none;
+
+    left: 100%;
+    top: 10px;
+    margin-left: 2rem;
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contact-icons {
+    margin-right: 5px;
+}
