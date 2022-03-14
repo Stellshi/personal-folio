@@ -112,7 +112,12 @@ p {
 =================*/
 
 .content {
+    height: 100%;
     width: 565px;
+}
+
+.content-header {
+    margin-bottom: 35px;
 }
 
 .subtitle {
@@ -122,7 +127,7 @@ p {
 }
 
 .title {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 
     font-size: 2rem;
     color: #fff;
@@ -150,12 +155,15 @@ p {
     display: inline-block;
     padding: 12px 35px;
 
+    font-family: inherit;
     font-size: 1rem;
     line-height: 1.1;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
 
+    cursor: pointer;
+    border: 0;
     background-color: #2B7DED;
     border-radius: 5px;
 
@@ -166,43 +174,52 @@ p {
     background-color: #1461cb;
 }
 
+.btn-full {
+    display: block;
+    width: 100%;
+}
+
 
 /* Author
 =================*/
+
 .author {
     position: absolute;
-    bottom: 0;
-    right: 20px;
 
+    right: 20px;
+    bottom: 0;
 }
+
+
 
 /* Footer
-=============== */
+=================*/
 
 .footer {
-
     width: 100%;
+
     position: absolute;
     bottom: 45px;
-    left: 0px;
+    left: 0;
 }
 
+
+
 /* Contacts
-=============== */
+=================*/
+
 .contacts {
     display: flex;
     align-items: center;
-
 }
 
 .contacts-link {
     margin-right: 2rem;
-    color: white;
-    font-weight: 500;
+
     font-size: 1rem;
-
+    color: #fff;
     text-decoration: none;
-
+    font-weight: 500;
 }
 
 .contacts-link:last-child {
@@ -210,24 +227,75 @@ p {
     position: relative;
 }
 
-.contacts-link:last-child::after {
+.contacts-link:last-child:after {
     content: "";
     display: block;
     width: 80px;
     height: 2px;
-    background-color: white;
-    position: absolute;
-pointer-events: none;
-
-    left: 100%;
-    top: 10px;
     margin-left: 2rem;
+
+    background-color: #fff;
+    pointer-events: none;
+
+    position: absolute;
+    left: 100%;
+    top: 11px;
 }
 
 .contacts-link:hover {
     text-decoration: underline;
 }
 
-.contact-icons {
+.contacts-icon {
     margin-right: 5px;
 }
+
+
+
+/* Form
+=================*/
+
+.form {
+    width: 100%;
+    max-width: 280px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input,
+.textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+
+    border: 0;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.textarea {
+    height: 100px;
+    resize: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
